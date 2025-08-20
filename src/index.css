@@ -41,7 +41,7 @@
     position: relative;
     overflow: hidden;
     transition: all 0.3s ease-out;
-    padding: 2rem;
+    padding: 1.6rem;
     width: 100%;
   }
   
@@ -78,7 +78,7 @@
   /* Modern Card (legacy support) */
   .modern-card {
     @apply glass-card;
-    padding: 4rem 5rem;
+    padding: 3.2rem 4rem;
   }
   
   /* Glassmorphism Button Styles */
@@ -88,7 +88,7 @@
     -webkit-backdrop-filter: blur(8px);
     border: 2px solid rgba(244, 208, 63, 0.4);
     color: #f4d03f;
-    padding: 12px 24px;
+    padding: 9.6px 19.2px;
     border-radius: 6px;
     font-weight: 500;
     transition: all 0.2s ease-out;

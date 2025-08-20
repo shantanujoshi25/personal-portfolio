@@ -102,13 +102,13 @@ const LeftNavigation = () => {
 
   return (
     <motion.nav
-      className="fixed left-8 top-16 bottom-16 z-40 hidden lg:block w-96"
+      className="fixed left-6 top-12 bottom-12 z-40 hidden lg:block w-80"
       variants={modernVariants.slideInFromLeft}
       initial="hidden"
       animate="visible"
     >
       <div 
-        className="glass-nav p-8 h-full flex flex-col backdrop-blur-xl"
+        className="glass-nav p-6 h-full flex flex-col backdrop-blur-xl"
         style={{
           background: theme.colors.background.glass.primary,
           backdropFilter: theme.glass.blur.lg,
@@ -128,7 +128,7 @@ const LeftNavigation = () => {
                 variants={modernVariants.staggerItem}
               >
                 <motion.button
-                  className="w-full text-left px-6 py-4 rounded-lg font-medium transition-all duration-200 text-lg border"
+                  className="w-full text-left px-5 py-3 rounded-lg font-medium transition-all duration-200 text-base border"
                   onClick={() => scrollToSection(item.id)}
                   variants={modernVariants.navItem}
                   initial="rest"

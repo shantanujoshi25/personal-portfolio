@@ -71,12 +71,12 @@ const AppContent = () => {
       <LeftNavigation />
       
       {/* Modern single-column layout - maximized width */}
-      <div className="w-full pl-8 pr-8 lg:pl-[30rem] lg:pr-16 py-12">
+      <div className="w-full pl-6 pr-6 lg:pl-[24rem] lg:pr-12 py-10">
         <Header />
         
         {/* Main content - single column */}
         <motion.main 
-          className="mt-24 space-y-24 relative"
+          className="mt-20 space-y-20 relative"
           variants={getVariants(modernVariants.pageTransition)}
           initial="initial"
           animate="animate"

@@ -68,17 +68,17 @@ export const theme = {
       mono: ['Azeret Mono', 'Fira Code', 'monospace']
     },
     fontSize: {
-      xs: '0.75rem',      // 12px
-      sm: '0.875rem',     // 14px
-      base: '1rem',       // 16px
-      lg: '1.125rem',     // 18px
-      xl: '1.25rem',      // 20px
-      '2xl': '1.5rem',    // 24px
-      '3xl': '1.875rem',  // 30px
-      '4xl': '2.25rem',   // 36px
-      '5xl': '3rem',      // 48px
-      '6xl': '3.75rem',   // 60px
-      '7xl': '4.5rem'     // 72px
+      xs: '0.6rem',       // 9.6px (80% of 12px)
+      sm: '0.7rem',       // 11.2px (80% of 14px)
+      base: '0.8rem',     // 12.8px (80% of 16px)
+      lg: '0.9rem',       // 14.4px (80% of 18px)
+      xl: '1rem',         // 16px (80% of 20px)
+      '2xl': '1.2rem',    // 19.2px (80% of 24px)
+      '3xl': '1.5rem',    // 24px (80% of 30px)
+      '4xl': '1.8rem',    // 28.8px (80% of 36px)
+      '5xl': '2.4rem',    // 38.4px (80% of 48px)
+      '6xl': '3rem',      // 48px (80% of 60px)
+      '7xl': '3.6rem'     // 57.6px (80% of 72px)
     },
     fontWeight: {
       normal: '400',
@@ -93,27 +93,27 @@ export const theme = {
     }
   },
   
-  // Spacing scale
+  // Spacing scale (80% of original)
   spacing: {
     px: '1px',
-    0.5: '0.125rem',    // 2px
-    1: '0.25rem',       // 4px
-    2: '0.5rem',        // 8px
-    3: '0.75rem',       // 12px
-    4: '1rem',          // 16px
-    5: '1.25rem',       // 20px
-    6: '1.5rem',        // 24px
-    8: '2rem',          // 32px
-    10: '2.5rem',       // 40px
-    12: '3rem',         // 48px
-    16: '4rem',         // 64px
-    20: '5rem',         // 80px
-    24: '6rem',         // 96px
-    32: '8rem',         // 128px
-    40: '10rem',        // 160px
-    48: '12rem',        // 192px
-    56: '14rem',        // 224px
-    64: '16rem'         // 256px
+    0.5: '0.1rem',      // 1.6px (80% of 2px)
+    1: '0.2rem',        // 3.2px (80% of 4px)
+    2: '0.4rem',        // 6.4px (80% of 8px)
+    3: '0.6rem',        // 9.6px (80% of 12px)
+    4: '0.8rem',        // 12.8px (80% of 16px)
+    5: '1rem',          // 16px (80% of 20px)
+    6: '1.2rem',        // 19.2px (80% of 24px)
+    8: '1.6rem',        // 25.6px (80% of 32px)
+    10: '2rem',         // 32px (80% of 40px)
+    12: '2.4rem',       // 38.4px (80% of 48px)
+    16: '3.2rem',       // 51.2px (80% of 64px)
+    20: '4rem',         // 64px (80% of 80px)
+    24: '4.8rem',       // 76.8px (80% of 96px)
+    32: '6.4rem',       // 102.4px (80% of 128px)
+    40: '8rem',         // 128px (80% of 160px)
+    48: '9.6rem',       // 153.6px (80% of 192px)
+    56: '11.2rem',      // 179.2px (80% of 224px)
+    64: '12.8rem'       // 204.8px (80% of 256px)
   },
   
   // Border radius (sharper for glass aesthetic)

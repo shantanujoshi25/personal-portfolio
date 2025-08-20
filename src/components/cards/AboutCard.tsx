@@ -23,7 +23,7 @@ const AboutCard = () => {
       }}
     >
       <motion.h2 
-        className="text-4xl md:text-5xl font-bold mb-8 text-center pb-6 text-gradient"
+        className="text-4xl md:text-5xl font-bold mb-4 text-center pb-3 text-gradient"
         variants={modernVariants.textReveal}
         style={{
           fontWeight: theme.typography.fontWeight.bold,
@@ -33,7 +33,7 @@ const AboutCard = () => {
         About Me
       </motion.h2>
       
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start w-full">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start w-full">
         {/* Profile Photo */}
         <motion.div 
           className="flex justify-center lg:justify-start"
@@ -43,7 +43,7 @@ const AboutCard = () => {
             <motion.img
               src="/shantanu-photo.jpg"
               alt="Shantanu Joshi"
-              className="w-72 h-72 lg:w-96 lg:h-96 object-cover rounded-2xl shadow-lg"
+              className="w-64 h-64 lg:w-80 lg:h-80 object-cover rounded-2xl shadow-lg"
               style={{
                 border: `2px solid ${theme.colors.border.primary}`
               }}
@@ -72,7 +72,7 @@ const AboutCard = () => {
         {/* Professional Summary Text */}
         <div className="flex flex-col justify-center lg:col-span-2">
           <motion.div 
-            className="text-xl md:text-2xl leading-relaxed min-h-[120px]"
+            className="text-lg md:text-xl leading-relaxed min-h-[80px]"
             variants={modernVariants.fadeIn}
             style={{
               color: theme.colors.text.primary,
@@ -96,7 +96,7 @@ const AboutCard = () => {
 
       {/* Contact Info */}
       <motion.div 
-        className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4 text-center"
+        className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-3 text-center"
         variants={modernVariants.staggerContainer}
         initial="hidden"
         animate="visible"
@@ -127,7 +127,7 @@ const AboutCard = () => {
       </motion.div>
       
       <motion.div 
-        className="mt-8 p-6 rounded-lg border-l-4 glass-overlay backdrop-blur-sm"
+        className="mt-6 p-4 rounded-lg border-l-4 glass-overlay backdrop-blur-sm"
         variants={modernVariants.scaleIn}
         style={{
           background: theme.colors.background.glass.accent,
@@ -137,10 +137,10 @@ const AboutCard = () => {
           boxShadow: theme.boxShadow.glass.inner
         }}
       >
-        <div className="text-center italic text-xl relative">
-          <span className="text-2xl" style={{ color: theme.colors.accent.primary }}>"</span>
+        <div className="text-center italic text-lg relative">
+          <span className="text-xl" style={{ color: theme.colors.accent.primary }}>"</span>
           <span style={{ color: theme.colors.text.primary }}>{PERSONAL_INFO.quote}</span>
-          <span className="text-2xl" style={{ color: theme.colors.accent.primary }}>"</span>
+          <span className="text-xl" style={{ color: theme.colors.accent.primary }}>"</span>
         </div>
       </motion.div>
 
