@@ -1,0 +1,17 @@
+<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f4d03f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f1c40f;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle with glassmorphism effect -->
+  <circle cx="20" cy="20" r="18" fill="rgba(42, 42, 42, 0.3)" stroke="rgba(244, 208, 63, 0.4)" stroke-width="2"/>
+  
+  <!-- Stylized "SJ" initials -->
+  <text x="20" y="27" font-family="Inter, sans-serif" font-size="16" font-weight="700" text-anchor="middle" fill="url(#logoGradient)">SJ</text>
+  
+  <!-- Accent dot -->
+  <circle cx="32" cy="12" r="2" fill="#f4d03f"/>
+</svg>
