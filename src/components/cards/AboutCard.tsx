@@ -72,11 +72,11 @@ const AboutCard = () => {
         {/* Professional Summary Text */}
         <div className="flex flex-col justify-center lg:col-span-2">
           <motion.div 
-            className="text-lg md:text-xl leading-relaxed min-h-[80px]"
+            className="text-lg md:text-xl leading-relaxed min-h-[80px] italic"
             variants={modernVariants.fadeIn}
             style={{
               color: theme.colors.text.primary,
-              fontFamily: theme.typography.fontFamily.primary.join(', '),
+              fontFamily: theme.typography.fontFamily.cursive.join(', '),
               lineHeight: '1.6'
             }}
           >

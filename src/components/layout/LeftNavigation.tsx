@@ -113,8 +113,8 @@ const LeftNavigation = () => {
           background: theme.colors.background.glass.primary,
           backdropFilter: theme.glass.blur.lg,
           WebkitBackdropFilter: theme.glass.blur.lg,
-          border: `2px solid ${theme.colors.background.glass.borderStrong}`,
-          boxShadow: theme.boxShadow.glass.medium
+          border: 'none',
+          boxShadow: 'none'
         }}
       >
         <div className="space-y-4 flex-1">
@@ -128,7 +128,7 @@ const LeftNavigation = () => {
                 variants={modernVariants.staggerItem}
               >
                 <motion.button
-                  className="w-full text-left px-5 py-3 rounded-lg font-medium transition-all duration-200 text-base border"
+                  className="w-full text-left px-5 py-3 rounded-lg font-medium transition-all duration-200 text-base"
                   onClick={() => scrollToSection(item.id)}
                   variants={modernVariants.navItem}
                   initial="rest"
@@ -136,8 +136,9 @@ const LeftNavigation = () => {
                   whileTap={{ scale: 0.98 }}
                   style={{
                     backgroundColor: isActive ? `${item.color}15` : 'transparent',
-                    borderColor: isActive ? `${item.color}40` : theme.colors.border.primary,
-                    color: isActive ? item.color : theme.colors.text.secondary
+                    border: 'none',
+                    color: isActive ? item.color : theme.colors.text.secondary,
+                    boxShadow: isActive ? `0 0 20px ${item.color}40, 0 0 40px ${item.color}20` : 'none'
                   }}
                 >
                   <div className="flex items-center gap-2">
