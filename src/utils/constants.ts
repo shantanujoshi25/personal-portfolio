@@ -7,7 +7,7 @@ export const PERSONAL_INFO = {
   phone: "+1 (669)-336-9774",
   email: "shan.joshi2504@gmail.com",
   professionalSummary: `Passionate builder with 3+ years crafting scalable solutions from concept to deployment. Constantly learning through 200+ coding challenges across diverse algorithms while driving innovation with AI automation that boosted team productivity by 25%. Recently contributed to payment systems serving 200K+ users at Corpay, and I'm excited to grow and contribute as a New Grad SWE.`,
-  quote: "Driving innovation through full-stack development and AI-powered solutions",
+  quote: "The impediment to action advances action. What stands in the way becomes the way.",
   resumePath: "/resume.pdf"
 };
 

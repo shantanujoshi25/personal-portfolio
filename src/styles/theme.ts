@@ -65,6 +65,7 @@ export const theme = {
   typography: {
     fontFamily: {
       primary: ['Inter', 'system-ui', 'sans-serif'],
+      cursive: ['Quicksand', 'Nunito', 'sans-serif'],
       mono: ['Azeret Mono', 'Fira Code', 'monospace']
     },
     fontSize: {

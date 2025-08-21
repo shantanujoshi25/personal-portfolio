@@ -72,11 +72,15 @@ const ContactDialog = ({ isOpen, onClose }: ContactDialogProps) => {
 
           {/* Dialog */}
           <motion.div
-            className="relative rounded-2xl p-10 max-w-lg w-full mx-4 shadow-2xl"
+            className="glass-card relative max-w-lg w-full mx-4"
             style={{
-              backgroundColor: theme.colors.background.secondary,
-              color: theme.colors.text.primary,
-              border: `2px solid ${theme.colors.accent.primary}`
+              padding: '2.5rem',
+              background: theme.colors.background.glass.primary,
+              backdropFilter: theme.glass.blur.lg,
+              WebkitBackdropFilter: theme.glass.blur.lg,
+              border: `2px solid ${theme.colors.background.glass.borderAccent}`,
+              boxShadow: theme.boxShadow.glass.glow,
+              borderRadius: '1rem'
             }}
             variants={dialogVariants}
             initial="hidden"
@@ -121,11 +125,15 @@ const ContactDialog = ({ isOpen, onClose }: ContactDialogProps) => {
               {/* Email Option */}
               <motion.a
                 href={`mailto:${CONTACT.email}?subject=Let's Connect!`}
-                className="flex items-center gap-4 p-4 rounded-xl transition-all duration-300 group"
+                className="glass-button flex items-center gap-4 p-4 rounded-xl transition-all duration-300 group"
                 style={{
-                  backgroundColor: `${theme.colors.accent.primary}15`,
-                  border: `1px solid ${theme.colors.accent.primary}30`,
-                  color: theme.colors.text.primary
+                  background: theme.colors.background.glass.accent,
+                  backdropFilter: theme.glass.blur.sm,
+                  WebkitBackdropFilter: theme.glass.blur.sm,
+                  border: `1px solid ${theme.colors.background.glass.borderAccent}`,
+                  color: theme.colors.text.primary,
+                  width: '100%',
+                  justifyContent: 'flex-start'
                 }}
                 variants={buttonVariants}
                 whileHover="hover"
@@ -145,11 +153,15 @@ const ContactDialog = ({ isOpen, onClose }: ContactDialogProps) => {
                 href={CONTACT.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-4 p-4 rounded-xl transition-all duration-300 group"
+                className="glass-button flex items-center gap-4 p-4 rounded-xl transition-all duration-300 group"
                 style={{
-                  backgroundColor: `${theme.colors.accent.primary}15`,
-                  border: `1px solid ${theme.colors.accent.primary}30`,
-                  color: theme.colors.text.primary
+                  background: theme.colors.background.glass.accent,
+                  backdropFilter: theme.glass.blur.sm,
+                  WebkitBackdropFilter: theme.glass.blur.sm,
+                  border: `1px solid ${theme.colors.background.glass.borderAccent}`,
+                  color: theme.colors.text.primary,
+                  width: '100%',
+                  justifyContent: 'flex-start'
                 }}
                 variants={buttonVariants}
                 whileHover="hover"
