@@ -112,18 +112,24 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "3",
+    title: "Lyft-BayWheels Campus Monitor Bot",
+    description: "Real-time Discord bot that tracks Lyft BayWheels bike-share availability across SJSU campus stations. Features automated monitoring, availability alerts, and station status updates to help students plan their commute efficiently.",
+    technologies: ["Python", "Discord.py", "REST APIs", "JSON", "Automated Scheduling"]
+  },
+  {
+    id: "4",
     title: "San Jose Crash Data Analytics",
     description: "Traffic crash data visualization platform with React web app and Streamlit dashboard for analyzing crash trends, locations, and contributing factors in San Jose, California.",
     technologies: ["React", "TypeScript", "Python", "Streamlit", "Data Visualization", "Geospatial Analysis"]
   },
   {
-    id: "4",
+    id: "5",
     title: "AI-Powered PDF Financial Data Mining",
     description: "Collaborative AI tool for automated mining and analysis of large PDF financial documents with semantic search, Q&A capabilities, and multi-language translation. Built as team project with 3 contributors.",
     technologies: ["Python", "OpenAI", "FAISS", "Streamlit", "Hugging Face", "NLP", "Semantic Search"]
   },
   {
-    id: "5",
+    id: "6",
     title: "WebScout - Web Intelligence Tool",
     description: "Python-based web intelligence and data extraction tool for automated web scraping and data analysis with advanced search capabilities.",
     technologies: ["Python", "Web Scraping", "Data Analysis", "Automation"]
