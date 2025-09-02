@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { useEffect } from 'react';
 import Header from './components/layout/Header';
 import LeftNavigation from './components/layout/LeftNavigation';
 import AboutCard from './components/cards/AboutCard';
@@ -18,10 +19,20 @@ import { useInView } from './hooks/useInView';
 import { useReducedMotion } from './hooks/useReducedMotion';
 import { useSectionTransition } from './hooks/useSectionTransition';
 import { theme } from './styles/theme';
+import { trackPageView, trackPerformance } from './utils/analytics';
 
 const AppContent = () => {
   // Check for reduced motion preference
   const prefersReducedMotion = useReducedMotion();
+
+  // Initialize analytics tracking
+  useEffect(() => {
+    // Track page view
+    trackPageView('Portfolio Home');
+    
+    // Initialize performance tracking
+    trackPerformance();
+  }, []);
   
   
   // Section transition state (for manual navigation)

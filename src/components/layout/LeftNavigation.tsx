@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { modernVariants } from '../../animations/modernVariants';
 import { theme } from '../../styles/theme';
 import { useSectionTransitionContext } from '../../contexts/SectionTransitionContext';
+import { trackNavigation } from '../../utils/analytics';
 
 interface NavItem {
   id: string;
@@ -27,6 +28,9 @@ const LeftNavigation = () => {
   const scrollToSection = (sectionId: string) => {
     // Don't allow navigation during transitions
     if (isTransitioning) return;
+    
+    // Track navigation click
+    trackNavigation(sectionId, activeSection);
     
     // Start transition animation
     startTransition(activeSection, sectionId);

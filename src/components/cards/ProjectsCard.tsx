@@ -3,8 +3,18 @@ import { ExternalLink, Github } from 'lucide-react';
 import { PROJECTS, CONTACT } from '../../utils/constants';
 import { modernVariants } from '../../animations/modernVariants';
 import { theme } from '../../styles/theme';
+import { trackProjectView, trackExternalLink } from '../../utils/analytics';
 
 const ProjectsCard = () => {
+  const handleProjectLinkClick = (project: any, linkType: 'demo' | 'github') => {
+    trackProjectView(project.title, linkType === 'demo' ? 'demo_click' : 'github_click');
+    trackExternalLink(linkType === 'demo' ? project.link : project.github, 'project');
+  };
+
+  const handleViewAllProjectsClick = () => {
+    trackExternalLink(CONTACT.github, 'project');
+  };
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -93,6 +103,7 @@ const ProjectsCard = () => {
                     }}
                     whileHover={{ scale: 1.1, rotate: 5 }}
                     whileTap={{ scale: 0.9 }}
+                    onClick={() => handleProjectLinkClick(project, 'demo')}
                   >
                     <ExternalLink size={16} />
                   </motion.a>
@@ -109,6 +120,7 @@ const ProjectsCard = () => {
                     }}
                     whileHover={{ scale: 1.1, rotate: -5 }}
                     whileTap={{ scale: 0.9 }}
+                    onClick={() => handleProjectLinkClick(project, 'github')}
                   >
                     <Github size={16} />
                   </motion.a>
@@ -197,6 +209,7 @@ const ProjectsCard = () => {
           className="modern-button px-6 py-3 rounded-lg font-semibold inline-block"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
+          onClick={handleViewAllProjectsClick}
         >
           View All Projects →
         </motion.a>

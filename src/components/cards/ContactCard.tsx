@@ -5,9 +5,24 @@ import { CONTACT } from '../../utils/constants';
 import { modernVariants } from '../../animations/modernVariants';
 import { theme } from '../../styles/theme';
 import ContactDialog from '../ContactDialog';
+import { trackExternalLink, trackContactInteraction } from '../../utils/analytics';
 
 const ContactCard = () => {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
+
+  const handleSocialLinkClick = (href: string, label: string) => {
+    const linkType = label.toLowerCase() === 'email' ? 'social' : 'social';
+    trackExternalLink(href, linkType);
+    
+    if (label.toLowerCase() === 'email') {
+      trackContactInteraction('email_click');
+    }
+  };
+
+  const handleContactDialogOpen = () => {
+    setIsDialogOpen(true);
+    trackContactInteraction('dialog_open');
+  };
 
   const socialLinks = [
     { 
@@ -99,6 +114,7 @@ const ContactCard = () => {
                   backgroundColor: `${theme.colors.accent.primary}25`
                 }}
                 whileTap={{ scale: 0.95 }}
+                onClick={() => handleSocialLinkClick(link.href, link.label)}
               >
                 <div className="flex flex-col items-center gap-3">
                   <link.icon size={32} className="group-hover:scale-110 transition-transform" />
@@ -130,7 +146,7 @@ const ContactCard = () => {
           I'm currently seeking <strong>SWE New Grad roles</strong> and open to exciting opportunities in full-stack development, AI/ML, and system design.
         </div>
         <motion.button
-          onClick={() => setIsDialogOpen(true)}
+          onClick={handleContactDialogOpen}
           className="modern-button inline-flex items-center gap-3 px-8 py-4 rounded-lg font-bold text-lg"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
