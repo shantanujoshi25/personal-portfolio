@@ -197,7 +197,7 @@ export const EDUCATION = [
     degree: "M.S., Software Engineering",
     school: "San Jose State University, California",
     dateRange: "August 2024 - May 2026",
-    gpa: "3.56 / 4.00"
+    gpa: "3.64 / 4.00"
   },
   {
     id: "2",
