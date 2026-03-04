@@ -6,7 +6,7 @@ export const PERSONAL_INFO = {
   location: "San Jose, CA",
   phone: "+1 (669)-336-9774",
   email: "shan.joshi2504@gmail.com",
-  professionalSummary: `Passionate builder with 3+ years crafting scalable solutions from concept to deployment. Constantly learning through 200+ coding challenges across diverse algorithms while driving innovation with AI automation that boosted team productivity by 25%. Recently contributed to payment systems serving 200K+ users at Corpay, and I'm excited to grow and contribute as a New Grad SWE.`,
+  professionalSummary: `Full-stack engineer with 3+ years building production systems and AI-powered platforms across microservices, REST APIs, RAG pipelines, and multi-agent orchestration. Delivered backend infrastructure serving 200K+ banking customers and shipped LLM integrations processing thousands of evaluations monthly. M.S. Software Engineering at SJSU, graduating May 2026.`,
   quote: "The impediment to action advances action. What stands in the way becomes the way.",
   resumePath: "/resume.pdf"
 };
