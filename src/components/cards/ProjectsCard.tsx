@@ -73,16 +73,29 @@ const ProjectsCard = () => {
             whileTap={{ scale: 0.98 }}
           >
             <div className="flex justify-between items-start mb-3">
-              <motion.h3 
+              <motion.h3
                 className="font-bold text-xl md:text-2xl transition-colors duration-300"
-                style={{ 
-                  color: theme.colors.text.primary 
+                style={{
+                  color: theme.colors.text.primary
                 }}
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 + (index * 0.1) }}
               >
-                {project.title}
+                {project.github ? (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline"
+                    style={{ color: 'inherit' }}
+                    onClick={() => handleProjectLinkClick(project, 'github')}
+                  >
+                    {project.title}
+                  </a>
+                ) : (
+                  project.title
+                )}
               </motion.h3>
               
               <motion.div 
