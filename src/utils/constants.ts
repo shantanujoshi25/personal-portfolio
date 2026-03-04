@@ -100,39 +100,88 @@ export const EXPERIENCE: Experience[] = [
 export const PROJECTS: Project[] = [
   {
     id: "1",
-    title: "Sum-It-AI Document Summarizer",
-    description: "AI-powered enterprise document processing platform with LLM integration, chatbot functionality, and contextual summarization. Deployed on AWS with real-time document querying capabilities.",
-    technologies: ["React.js", "Express.js", "AWS (Amplify, AppRunner, RDS)", "PostgreSQL", "GPT-3.5-turbo", "Qdrant"]
+    title: "Bingo with Aliens",
+    description: "Multiplayer bingo game built on the Alien mini-app platform. Top 5 finish at Alien Genesis Hackathon (Feb 2026, SF). Players join lobbies, pick numbers on a 3x3 grid, and compete for the pot with real-money buy-ins and verified users.",
+    technologies: ["React", "TypeScript", "Tailwind CSS", "FastAPI", "Python", "Redis", "Alien Bridge SDK", "Railway"],
+    github: "https://github.com/shantanujoshi25/Bingo"
   },
   {
     id: "2",
-    title: "FlavorFinder - Restaurant Discovery Platform",
-    description: "Modern restaurant discovery platform with advanced search capabilities, user authentication, review system, and detailed restaurant information. Built for CMPE-202 coursework.",
-    technologies: ["React", "TypeScript", "Spring Boot", "Java 17", "MySQL", "AWS (EC2, RDS, S3)", "Material-UI"]
+    title: "RGB-Thermal Fusion Object Detection",
+    description: "Deep learning research project comparing RGB-Thermal fusion strategies for object detection using YOLOv11n on the M3FD dataset. Built a GAN-based early fusion pipeline with U-Net generator and PatchGAN discriminator, achieving best mAP@50 of ~0.75.",
+    technologies: ["Python", "PyTorch", "YOLOv11", "GANs", "U-Net", "PatchGAN", "Ultralytics", "Google Colab"],
+    github: "https://github.com/shantanujoshi25/rgb-thermal-fusion-yolov11"
   },
   {
     id: "3",
-    title: "Lyft-BayWheels Campus Monitor Bot",
-    description: "Real-time Discord bot that tracks Lyft BayWheels bike-share availability across SJSU campus stations. Features automated monitoring, availability alerts, and station status updates to help students plan their commute efficiently.",
-    technologies: ["Python", "Discord.py", "REST APIs", "JSON", "Automated Scheduling"]
+    title: "Sum-It-AI Document Summarizer",
+    description: "AI-powered enterprise document processing platform with LLM integration, chatbot functionality, and contextual summarization. Deployed on AWS with real-time document querying capabilities.",
+    technologies: ["React.js", "Express.js", "AWS (Amplify, AppRunner, RDS)", "PostgreSQL", "GPT-3.5-turbo", "Qdrant"],
+    link: "https://main.d19opk0v2645vf.amplifyapp.com/",
+    github: "https://github.com/shantanujoshi25/Sum_It_AI"
   },
   {
     id: "4",
-    title: "San Jose Crash Data Analytics",
-    description: "Traffic crash data visualization platform with React web app and Streamlit dashboard for analyzing crash trends, locations, and contributing factors in San Jose, California.",
-    technologies: ["React", "TypeScript", "Python", "Streamlit", "Data Visualization", "Geospatial Analysis"]
+    title: "GitHub Profile Analyzer",
+    description: "Kafka-based pipeline that analyzes GitHub profiles against job descriptions using AI agents. Features a CrewAI agent that fetches profile data via GitHub GraphQL API and evaluates candidate-job fit using GPT-4o, with a Strawberry + FastAPI GraphQL server.",
+    technologies: ["Python", "Apache Kafka", "CrewAI", "OpenAI GPT-4o", "GitHub GraphQL API", "FastAPI", "Strawberry", "SQLite", "Docker"],
+    github: "https://github.com/shantanujoshi25/github-analyzer"
   },
   {
     id: "5",
-    title: "AI-Powered PDF Financial Data Mining",
-    description: "Collaborative AI tool for automated mining and analysis of large PDF financial documents with semantic search, Q&A capabilities, and multi-language translation. Built as team project with 3 contributors.",
-    technologies: ["Python", "OpenAI", "FAISS", "Streamlit", "Hugging Face", "NLP", "Semantic Search"]
+    title: "SnapTrip - AI Travel Planner",
+    description: "AI-powered travel planning application that generates multi-day itineraries based on destination, dates, interests, trip pace, and accessibility preferences. Features a guided multi-step flow, local trip saving, PDF export, and light/dark themes.",
+    technologies: ["React", "Material UI", "Framer Motion", "Node.js", "Express.js", "OpenAI API", "jsPDF"],
+    github: "https://github.com/shantanujoshi25/SnapTrip"
   },
   {
     id: "6",
+    title: "FlavorFinder - Restaurant Discovery Platform",
+    description: "Modern restaurant discovery platform with advanced search capabilities, user authentication, review system, and detailed restaurant information. Built for CMPE-202 coursework.",
+    technologies: ["React", "TypeScript", "Spring Boot", "Java 17", "MySQL", "AWS (EC2, RDS, S3)", "Material-UI"],
+    github: "https://github.com/shantanujoshi25/restaurant-finder"
+  },
+  {
+    id: "7",
+    title: "AI-Powered PDF Financial Data Mining",
+    description: "Collaborative AI tool for automated mining and analysis of large PDF financial documents with semantic search, Q&A capabilities, and multi-language translation. Built as team project with 3 contributors.",
+    technologies: ["Python", "OpenAI", "FAISS", "Streamlit", "Hugging Face", "NLP", "Semantic Search"],
+    github: "https://github.com/shantanujoshi25/255-pdf-data-mining"
+  },
+  {
+    id: "8",
+    title: "San Jose Crash Data Analytics",
+    description: "Traffic crash data visualization platform with React web app and interactive Streamlit dashboard powered by Google BigQuery. Features top crash site mapping with Folium, hourly/daily heatmaps, seasonal trend analysis, and filterable Plotly visualizations for analyzing crash patterns in San Jose.",
+    technologies: ["React", "TypeScript", "Python", "Streamlit", "Google BigQuery", "Plotly", "Folium", "Pandas", "Data Visualization"],
+    github: "https://github.com/shantanujoshi25/SanJose_Crash"
+  },
+  {
+    id: "9",
+    title: "Software CPU Simulator",
+    description: "16-bit software CPU simulator with a custom instruction set architecture, assembler, and execution environment. Features a full fetch-decode-execute cycle, ALU, memory-mapped I/O (UART & Timer), and segmented memory model with text, data, heap, and stack regions.",
+    technologies: ["C", "Custom ISA", "Assembler", "Memory-Mapped I/O", "Makefile"],
+    github: "https://github.com/shantanujoshi25/SoftwareCPU"
+  },
+  {
+    id: "10",
+    title: "Lyft-BayWheels Campus Monitor Bot",
+    description: "Real-time Discord bot that tracks Lyft BayWheels bike-share availability across SJSU campus stations. Features automated monitoring, availability alerts, and station status updates to help students plan their commute efficiently.",
+    technologies: ["Python", "Discord.py", "REST APIs", "JSON", "Automated Scheduling"],
+    github: "https://github.com/shantanujoshi25/Lyft-BayWheels-Discord-Bot"
+  },
+  {
+    id: "11",
     title: "WebScout - Web Intelligence Tool",
     description: "Python-based web intelligence and data extraction tool for automated web scraping and data analysis with advanced search capabilities.",
-    technologies: ["Python", "Web Scraping", "Data Analysis", "Automation"]
+    technologies: ["Python", "Web Scraping", "Data Analysis", "Automation"],
+    github: "https://github.com/shantanujoshi25/webscout"
+  },
+  {
+    id: "12",
+    title: "COVID-19 Telegram Bot",
+    description: "Telegram chatbot providing real-time COVID-19 statistics by country. Users send a country name for quick stats or use # prefix for detailed breakdowns including recovered, active, critical cases, and cases per million. Data scraped live from Worldometers.",
+    technologies: ["Python", "Flask", "python-telegram-bot", "BeautifulSoup", "Requests", "Gunicorn", "Heroku"],
+    github: "https://github.com/shantanujoshi25/covid19_TelegramBot"
   }
 ];
 
