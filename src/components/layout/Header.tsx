@@ -165,7 +165,7 @@ const Header = () => {
               className="hidden md:block text-sm"
               style={{ color: theme.colors.text.secondary }}
             >
-              Full-Stack Developer | 3+ Years Experience | Java, Python, React Expertise
+              AI & Full-Stack Engineer | 3+ Years Experience | Java, Python, React Expertise
             </div>
           </div>
           

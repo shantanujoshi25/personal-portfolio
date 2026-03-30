@@ -2,11 +2,11 @@ import { Project, Experience, Skill, ContactInfo } from '../types';
 
 export const PERSONAL_INFO = {
   name: "Shantanu Joshi",
-  tagline: "Full-Stack Developer | 3+ Years Experience | Java, Python, React Expertise",
+  tagline: "AI & Full-Stack Engineer | 3+ Years Experience | Java, Python, React Expertise",
   location: "San Jose, CA",
   phone: "+1 (669)-336-9774",
   email: "shan.joshi2504@gmail.com",
-  professionalSummary: `Full-stack engineer with 3+ years building production systems and AI-powered platforms across microservices, REST APIs, RAG pipelines, and multi-agent orchestration. Delivered backend infrastructure serving 200K+ banking customers and shipped LLM integrations processing thousands of evaluations monthly. M.S. Software Engineering at SJSU, graduating May 2026.`,
+  professionalSummary: `AI & full-stack engineer with 3+ years building production systems and AI-powered platforms across microservices, REST APIs, RAG pipelines, and multi-agent orchestration. Delivered backend infrastructure serving 200K+ banking customers and shipped LLM integrations processing thousands of evaluations monthly. M.S. Software Engineering at SJSU, graduating May 2026.`,
   quote: "The impediment to action advances action. What stands in the way becomes the way.",
   resumePath: "/resume.pdf"
 };
