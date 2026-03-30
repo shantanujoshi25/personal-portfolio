@@ -115,7 +115,7 @@ export const PROJECTS: Project[] = [
   {
     id: "1",
     title: "Bingo with Aliens",
-    description: "Multiplayer bingo game built on the Alien mini-app platform. Top 5 finish at Alien Genesis Hackathon (Feb 2026, SF). Players join lobbies, pick numbers on a 3x3 grid, and compete for the pot with real-money buy-ins and verified users.",
+    description: "Top 5 finish at Alien.org Genesis Hackathon (Feb 2026, SF). A verified-identity gaming platform with real-time multiplayer and payment jackpots — players join lobbies, pick numbers on a 3x3 grid, and compete for the pot with real-money buy-ins. Built on Alien's mini-app platform with identity verification and seamless payment integration.",
     technologies: ["React", "TypeScript", "Tailwind CSS", "FastAPI", "Python", "Redis", "Alien Bridge SDK", "Railway"],
     github: "https://github.com/shantanujoshi25/Bingo"
   },
@@ -224,7 +224,8 @@ export const EDUCATION = [
 
 export const CERTIFICATIONS = [
   "NSD Certification in Penetration Testing & Vulnerability Analysis (ISAC)",
-  "200+ DSA Problems: Systematic practice across Arrays, Trees, DP, Graphs, System Design",
+  "Top 5 at Alien.org Genesis Hackathon (Feb 2026, SF) — built a verified-identity gaming platform with real-time multiplayer payment jackpots",
   "Led hackathon team to win Cybersecurity Prize @SJSU for community-based application",
+  "200+ DSA Problems: Systematic practice across Arrays, Trees, DP, Graphs, System Design",
   "Launched weekly tech presentations on API/microservices for junior developers at TCS"
 ];
