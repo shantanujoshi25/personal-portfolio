@@ -99,6 +99,20 @@ export const EXPERIENCE: Experience[] = [
 
 export const PROJECTS: Project[] = [
   {
+    id: "13",
+    title: "RecruiTech - AI Technical Recruitment Platform",
+    description: "AI-powered recruitment platform that automates candidate screening through a 6-task Airflow DAG running 3 parallel AI agents (ATS resume scorer, GitHub analyzer via GraphQL API, LeetCode stats analyzer). Features weighted scoring with CrewAI synthesis producing 8-dimension candidate evaluations, real-time AI interviews using WebSockets and WebRTC with Whisper transcription and GPT-4o dynamic question generation, plus role-based flows for candidates and recruiters with Google OAuth. In progress — expected April 2026.",
+    technologies: ["Python", "OpenAI (GPT-4o, Whisper)", "CrewAI", "Apache Airflow", "Apollo GraphQL", "React", "Node.js", "MongoDB", "Kafka", "AWS S3", "WebRTC"],
+    github: "https://github.com/shantanujoshi25/RecruiTech"
+  },
+  {
+    id: "14",
+    title: "StackComply - AI Compliance Scanner",
+    description: "AI-powered compliance scanner for GitHub repositories. Paste a repo URL and get a full compliance report in under a minute. Uses a 3-agent pipeline to detect sensitive data fields, map violations to regulations (GDPR, HIPAA, CCPA, PCI-DSS, SOC2), estimate non-compliance costs, and assign a compliance grade.",
+    technologies: ["Next.js", "TypeScript", "OpenAI GPT-4o-mini", "Stack Auth", "GitHub API", "Tailwind CSS"],
+    github: "https://github.com/shantanujoshi25/StackAuthHackathon"
+  },
+  {
     id: "1",
     title: "Bingo with Aliens",
     description: "Multiplayer bingo game built on the Alien mini-app platform. Top 5 finish at Alien Genesis Hackathon (Feb 2026, SF). Players join lobbies, pick numbers on a 3x3 grid, and compete for the pot with real-money buy-ins and verified users.",

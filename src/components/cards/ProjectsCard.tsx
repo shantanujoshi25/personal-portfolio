@@ -29,7 +29,6 @@ const ProjectsCard = () => {
 
   return (
     <motion.div 
-      id="projects"
       className="glass-card"
       variants={modernVariants.cardHover}
       initial="rest"

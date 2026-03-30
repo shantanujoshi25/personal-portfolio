@@ -6,6 +6,7 @@ import AboutCard from './components/cards/AboutCard';
 import SkillsCard from './components/cards/SkillsCard';
 import ExperienceCard from './components/cards/ExperienceCard';
 import ProjectsCard from './components/cards/ProjectsCard';
+import ProjectsFlashcards from './components/cards/ProjectsFlashcards';
 import EducationCard from './components/cards/EducationCard';
 import CertificationsCard from './components/cards/CertificationsCard';
 import ContactCard from './components/cards/ContactCard';
@@ -53,7 +54,8 @@ const AppContent = () => {
   
   // Individual scroll triggers for each card
   const aboutInView = useInView({ threshold: 0.2 });
-  const projectsInView = useInView({ threshold: 0.2 });
+  const projectsInView = useInView({ threshold: 0.05 });
+  const flashcardsInView = useInView({ threshold: 0.1 });
   const educationInView = useInView({ threshold: 0.2 });
   const certificationsInView = useInView({ threshold: 0.2 });
   const experienceInView = useInView({ threshold: 0.2 });
@@ -107,17 +109,31 @@ const AppContent = () => {
             <AboutCard />
           </motion.section>
           
-          {/* Projects showcase */}
-          <motion.section
-            ref={projectsInView.ref}
-            variants={getVariants(modernVariants.slideInFromRight)}
-            initial="hidden"
-            animate={projectsInView.isInView ? "visible" : "hidden"}
-            className="w-full"
-          >
-            <ProjectsCard />
-          </motion.section>
-          
+          {/* Projects — shared anchor for navigation */}
+          <div id="projects" className="w-full">
+            {/* Projects list — mobile/tablet only */}
+            <motion.section
+              ref={projectsInView.ref}
+              variants={getVariants(modernVariants.slideInFromRight)}
+              initial="hidden"
+              animate={projectsInView.isInView ? "visible" : "hidden"}
+              className="w-full lg:hidden"
+            >
+              <ProjectsCard />
+            </motion.section>
+
+            {/* Projects carousel — desktop only */}
+            <motion.section
+              ref={flashcardsInView.ref}
+              variants={getVariants(modernVariants.fadeInUp)}
+              initial="hidden"
+              animate={flashcardsInView.isInView ? "visible" : "hidden"}
+              className="w-full hidden lg:block"
+            >
+              <ProjectsFlashcards />
+            </motion.section>
+          </div>
+
           {/* Experience section */}
           <motion.section
             ref={experienceInView.ref}
