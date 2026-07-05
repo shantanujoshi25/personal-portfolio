@@ -113,6 +113,13 @@ export const PROJECTS: Project[] = [
     github: "https://github.com/shantanujoshi25/RecruiTech"
   },
   {
+    id: "16",
+    title: "Agentic AI Lab",
+    description: "A build first lab for production minded AI agents, taking the tool use loop from raw primitives up to stateful, checkpointed ReAct agents. Week one builds an agent loop by hand with a manual reason, act, observe cycle driven by the model stop reason, then week two rebuilds it in LangGraph with state graphs, streaming, SqliteSaver checkpointing, and human in the loop approval gates. Every exercise is grounded in a realistic payments and accounts payable workflow, with token logging and cost awareness baked in from day one.",
+    technologies: ["Python", "AWS Bedrock", "LangGraph", "LangChain", "langchain aws", "Claude (Sonnet, Haiku)", "boto3"],
+    github: "https://github.com/shantanujoshi25/agentic-ai-journey"
+  },
+  {
     id: "14",
     title: "StackComply, AI Compliance Scanner",
     description: "AI compliance scanner for GitHub repositories. Paste a repo URL and get a full compliance report in under a minute. A three agent pipeline runs in sequence: a Schema Detective finds and parses database schemas, a Data Classifier flags sensitive fields, and a Regulation Mapper maps violations to GDPR, HIPAA, CCPA, PCI DSS, and SOC2, estimates non compliance cost, and assigns a compliance grade from A to F.",
