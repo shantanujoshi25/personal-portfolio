@@ -77,23 +77,6 @@ const CertificationsCard = () => {
             >
               {cert}
             </motion.div>
-            
-            {/* Highlight special achievements */}
-            {(cert.includes('200+') || cert.includes('hackathon') || cert.includes('NSD')) && (
-              <motion.div 
-                className="mt-2 inline-flex items-center gap-1 px-2 py-1 rounded-full text-xs font-semibold"
-                style={{
-                  backgroundColor: theme.colors.accent.primary,
-                  color: theme.colors.background.primary
-                }}
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5, delay: 0.9 + (index * 0.15) }}
-              >
-                <span>⭐</span>
-                <span>Featured</span>
-              </motion.div>
-            )}
           </motion.div>
         ))}
       </motion.div>
