@@ -2,11 +2,11 @@ import { Project, Experience, Skill, ContactInfo } from '../types';
 
 export const PERSONAL_INFO = {
   name: "Shantanu Joshi",
-  tagline: "AI & Full-Stack Engineer | 3+ Years Experience | Java, Python, React Expertise",
+  tagline: "Agentic AI and Full Stack Engineer | 3+ Years Experience | Multi Agent Systems, LLMs, React",
   location: "San Jose, CA",
   phone: "+1 (669)-336-9774",
   email: "shan.joshi2504@gmail.com",
-  professionalSummary: `AI & full-stack engineer with 3+ years building production systems and AI-powered platforms across microservices, REST APIs, RAG pipelines, and multi-agent orchestration. Delivered backend infrastructure serving 200K+ banking customers and shipped LLM integrations processing thousands of evaluations monthly. M.S. Software Engineering at SJSU, graduating May 2026.`,
+  professionalSummary: `AI and full stack engineer with 3+ years building production systems, now focused on agentic AI. I design multi agent pipelines, tool calling LLM workflows, and RAG systems that ship. I have built orchestrated agent systems for recruitment, compliance, and ambient study capture (a 1st prize hackathon win), on top of backend infrastructure serving 200K+ banking customers and LLM integrations processing thousands of evaluations monthly. M.S. Software Engineering at SJSU, graduating May 2026.`,
   quote: "The impediment to action advances action. What stands in the way becomes the way.",
   resumePath: "/resume.pdf"
 };
@@ -99,17 +99,24 @@ export const EXPERIENCE: Experience[] = [
 
 export const PROJECTS: Project[] = [
   {
+    id: "15",
+    title: "Magpie, Ambient Study Agent",
+    description: "Winner of 1st Prize for Most Innovative Use of Agents at the Harness Engineering Hack. An ambient study agent that watches your clipboard as you read across tabs, papers, and LLM chats. Four specialized Guild.ai agents work together: one classifies each snippet into a topic notebook, one synthesizes a notebook into a narrative summary, one refiles ambiguous snippets, and one answers questions by emitting an OpenUI Lang document the dashboard renders live as its own UI. Every copy streams into ClickHouse and surfaces on a live Next.js dashboard with analytics charts and an Ask Magpie chat panel.",
+    technologies: ["Python", "Guild.ai Agents", "OpenUI", "ClickHouse", "Next.js", "React", "TypeScript"],
+    github: "https://github.com/shantanujoshi25/magpie"
+  },
+  {
     id: "13",
-    title: "RecruiTech - AI Technical Recruitment Platform",
-    description: "AI-powered recruitment platform that automates candidate screening through a 6-task Airflow DAG running 3 parallel AI agents (ATS resume scorer, GitHub analyzer via GraphQL API, LeetCode stats analyzer). Features weighted scoring with CrewAI synthesis producing 8-dimension candidate evaluations, real-time AI interviews using WebSockets and WebRTC with Whisper transcription and GPT-4o dynamic question generation, plus role-based flows for candidates and recruiters with Google OAuth. In progress — expected April 2026.",
-    technologies: ["Python", "OpenAI (GPT-4o, Whisper)", "CrewAI", "Apache Airflow", "Apollo GraphQL", "React", "Node.js", "MongoDB", "Kafka", "AWS S3", "WebRTC"],
+    title: "RecruiTech, AI Technical Recruitment Platform",
+    description: "End to end technical recruiting platform that unifies job posting, automated candidate evaluation, and live AI led interviews in one workflow. CrewAI agents orchestrated by Apache Airflow and Kafka enrich candidate profiles from resumes, GitHub via GraphQL, and LeetCode, then produce weighted multi dimension evaluation reports with radar charts. Live AI interviews run over WebSockets and WebRTC with real time Whisper transcription and GPT 4o question generation and scoring, while gRPC handles typed communication between the backend and interview service. In progress, expected April 2026.",
+    technologies: ["Python", "CrewAI", "Apache Airflow", "Kafka", "OpenAI (GPT 4o, Whisper)", "Node.js", "GraphQL (Apollo)", "gRPC", "React 19", "MongoDB", "AWS S3", "WebRTC"],
     github: "https://github.com/shantanujoshi25/RecruiTech"
   },
   {
     id: "14",
-    title: "StackComply - AI Compliance Scanner",
-    description: "AI-powered compliance scanner for GitHub repositories. Paste a repo URL and get a full compliance report in under a minute. Uses a 3-agent pipeline to detect sensitive data fields, map violations to regulations (GDPR, HIPAA, CCPA, PCI-DSS, SOC2), estimate non-compliance costs, and assign a compliance grade.",
-    technologies: ["Next.js", "TypeScript", "OpenAI GPT-4o-mini", "Stack Auth", "GitHub API", "Tailwind CSS"],
+    title: "StackComply, AI Compliance Scanner",
+    description: "AI compliance scanner for GitHub repositories. Paste a repo URL and get a full compliance report in under a minute. A three agent pipeline runs in sequence: a Schema Detective finds and parses database schemas, a Data Classifier flags sensitive fields, and a Regulation Mapper maps violations to GDPR, HIPAA, CCPA, PCI DSS, and SOC2, estimates non compliance cost, and assigns a compliance grade from A to F.",
+    technologies: ["Next.js", "TypeScript", "OpenAI GPT 4o mini", "Stack Auth", "GitHub API", "Tailwind CSS"],
     github: "https://github.com/shantanujoshi25/StackAuthHackathon"
   },
   {
@@ -137,8 +144,8 @@ export const PROJECTS: Project[] = [
   {
     id: "4",
     title: "GitHub Profile Analyzer",
-    description: "Kafka-based pipeline that analyzes GitHub profiles against job descriptions using AI agents. Features a CrewAI agent that fetches profile data via GitHub GraphQL API and evaluates candidate-job fit using GPT-4o, with a Strawberry + FastAPI GraphQL server.",
-    technologies: ["Python", "Apache Kafka", "CrewAI", "OpenAI GPT-4o", "GitHub GraphQL API", "FastAPI", "Strawberry", "SQLite", "Docker"],
+    description: "Kafka based pipeline that analyzes GitHub profiles against job descriptions using AI agents. A CrewAI agent fetches profile data through a custom GitHub GraphQL tool and evaluates candidate to job fit with GPT 4o, fronted by a Strawberry and FastAPI GraphQL server. A producer reads candidates from SQLite and streams them through Kafka to the consumer that triggers the agent.",
+    technologies: ["Python", "Apache Kafka", "CrewAI", "OpenAI GPT 4o", "GitHub GraphQL API", "FastAPI", "Strawberry", "SQLite", "Docker"],
     github: "https://github.com/shantanujoshi25/github-analyzer"
   },
   {
@@ -223,6 +230,7 @@ export const EDUCATION = [
 ];
 
 export const CERTIFICATIONS = [
+  "1st Prize, Most Innovative Use of Agents at the Harness Engineering Hack (built Magpie, an ambient study agent powered by four Guild.ai agents)",
   "NSD Certification in Penetration Testing & Vulnerability Analysis (ISAC)",
   "Top 5 at Alien.org Genesis Hackathon (Feb 2026, SF) — built a verified-identity gaming platform with real-time multiplayer payment jackpots",
   "Led hackathon team to win Cybersecurity Prize @SJSU for community-based application",
